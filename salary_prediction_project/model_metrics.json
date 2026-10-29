@@ -1,0 +1,1769 @@
+{
+  "pipeline_version": "notebook_v1",
+  "best_model_name": "Linear Regression",
+  "best_model_metrics": {
+    "Model": "Linear Regression",
+    "Test R²": 0.9635,
+    "Test MAE ($)": 5387.63,
+    "Test MAE (₹)": 457948.97,
+    "Test MAE (LPA)": 4.58,
+    "Test RMSE ($)": 7041.8,
+    "Test RMSE (₹)": 598553.12,
+    "Test RMSE (LPA)": 5.99
+  },
+  "model_comparison": [
+    {
+      "Model": "Linear Regression",
+      "Test R²": 0.9635,
+      "Test MAE ($)": 5387.63,
+      "Test MAE (₹)": 457948.97,
+      "Test MAE (LPA)": 4.58,
+      "Test RMSE ($)": 7041.8,
+      "Test RMSE (₹)": 598553.12,
+      "Test RMSE (LPA)": 5.99
+    },
+    {
+      "Model": "Ridge Regression",
+      "Test R²": 0.9635,
+      "Test MAE ($)": 5387.29,
+      "Test MAE (₹)": 457919.44,
+      "Test MAE (LPA)": 4.58,
+      "Test RMSE ($)": 7042.7,
+      "Test RMSE (₹)": 598629.81,
+      "Test RMSE (LPA)": 5.99
+    },
+    {
+      "Model": "Lasso Regression",
+      "Test R²": 0.9616,
+      "Test MAE ($)": 5518.23,
+      "Test MAE (₹)": 469049.49,
+      "Test MAE (LPA)": 4.69,
+      "Test RMSE ($)": 7223.47,
+      "Test RMSE (₹)": 613994.86,
+      "Test RMSE (LPA)": 6.14
+    }
+  ],
+  "feature_importances": [
+    {
+      "feature": "location",
+      "importance": 0.33715
+    },
+    {
+      "feature": "experience_years",
+      "importance": 0.19789
+    },
+    {
+      "feature": "company_size",
+      "importance": 0.17124
+    },
+    {
+      "feature": "job_title",
+      "importance": 0.16882
+    },
+    {
+      "feature": "education_level",
+      "importance": 0.09803
+    },
+    {
+      "feature": "skills_count",
+      "importance": 0.01648
+    },
+    {
+      "feature": "certifications",
+      "importance": 0.00577
+    },
+    {
+      "feature": "remote_work",
+      "importance": 0.00463
+    },
+    {
+      "feature": "industry",
+      "importance": 0.0
+    }
+  ],
+  "dataset_stats": {
+    "total_records": 250000,
+    "median_salary_usd": 143453.0,
+    "median_salary_inr": 12193505.0,
+    "median_salary_lpa": 121.93505,
+    "modeling_rows": 50000,
+    "train_size": 40000,
+    "test_size": 10000
+  },
+  "features": {
+    "numeric": [
+      "experience_years",
+      "skills_count",
+      "certifications"
+    ],
+    "categorical": [
+      "job_title",
+      "education_level",
+      "industry",
+      "company_size",
+      "location",
+      "remote_work"
+    ],
+    "categorical_options": {
+      "job_title": [
+        "AI Engineer",
+        "Backend Developer",
+        "Business Analyst",
+        "Cloud Engineer",
+        "Cybersecurity Analyst",
+        "Data Analyst",
+        "Data Scientist",
+        "DevOps Engineer",
+        "Frontend Developer",
+        "Machine Learning Engineer",
+        "Product Manager",
+        "Software Engineer"
+      ],
+      "education_level": [
+        "Bachelor",
+        "Diploma",
+        "High School",
+        "Master",
+        "PhD"
+      ],
+      "industry": [
+        "Consulting",
+        "Education",
+        "Finance",
+        "Government",
+        "Healthcare",
+        "Manufacturing",
+        "Media",
+        "Retail",
+        "Technology",
+        "Telecom"
+      ],
+      "company_size": [
+        "Enterprise",
+        "Large",
+        "Medium",
+        "Small",
+        "Startup"
+      ],
+      "location": [
+        "Australia",
+        "Canada",
+        "Germany",
+        "India",
+        "Netherlands",
+        "Remote",
+        "Singapore",
+        "Sweden",
+        "UK",
+        "USA"
+      ],
+      "remote_work": [
+        "Hybrid",
+        "No",
+        "Yes"
+      ]
+    }
+  },
+  "actual_vs_predicted_samples": [
+    {
+      "actual_lpa": 174.381,
+      "predicted_lpa": 169.823
+    },
+    {
+      "actual_lpa": 146.705,
+      "predicted_lpa": 146.019
+    },
+    {
+      "actual_lpa": 47.265,
+      "predicted_lpa": 30.87
+    },
+    {
+      "actual_lpa": 110.23,
+      "predicted_lpa": 108.051
+    },
+    {
+      "actual_lpa": 104.547,
+      "predicted_lpa": 98.386
+    },
+    {
+      "actual_lpa": 129.864,
+      "predicted_lpa": 124.074
+    },
+    {
+      "actual_lpa": 79.772,
+      "predicted_lpa": 67.184
+    },
+    {
+      "actual_lpa": 103.862,
+      "predicted_lpa": 105.819
+    },
+    {
+      "actual_lpa": 76.374,
+      "predicted_lpa": 64.084
+    },
+    {
+      "actual_lpa": 120.57,
+      "predicted_lpa": 111.387
+    },
+    {
+      "actual_lpa": 156.21,
+      "predicted_lpa": 150.65
+    },
+    {
+      "actual_lpa": 165.931,
+      "predicted_lpa": 163.277
+    },
+    {
+      "actual_lpa": 92.105,
+      "predicted_lpa": 87.252
+    },
+    {
+      "actual_lpa": 150.837,
+      "predicted_lpa": 149.182
+    },
+    {
+      "actual_lpa": 176.629,
+      "predicted_lpa": 168.657
+    },
+    {
+      "actual_lpa": 67.469,
+      "predicted_lpa": 55.761
+    },
+    {
+      "actual_lpa": 71.103,
+      "predicted_lpa": 69.599
+    },
+    {
+      "actual_lpa": 109.941,
+      "predicted_lpa": 107.508
+    },
+    {
+      "actual_lpa": 118.726,
+      "predicted_lpa": 121.711
+    },
+    {
+      "actual_lpa": 184.408,
+      "predicted_lpa": 176.843
+    },
+    {
+      "actual_lpa": 129.086,
+      "predicted_lpa": 139.594
+    },
+    {
+      "actual_lpa": 141.808,
+      "predicted_lpa": 139.301
+    },
+    {
+      "actual_lpa": 82.214,
+      "predicted_lpa": 80.467
+    },
+    {
+      "actual_lpa": 67.472,
+      "predicted_lpa": 64.183
+    },
+    {
+      "actual_lpa": 135.787,
+      "predicted_lpa": 133.184
+    },
+    {
+      "actual_lpa": 119.162,
+      "predicted_lpa": 118.623
+    },
+    {
+      "actual_lpa": 125.121,
+      "predicted_lpa": 132.455
+    },
+    {
+      "actual_lpa": 114.844,
+      "predicted_lpa": 118.703
+    },
+    {
+      "actual_lpa": 105.008,
+      "predicted_lpa": 120.874
+    },
+    {
+      "actual_lpa": 103.935,
+      "predicted_lpa": 111.468
+    },
+    {
+      "actual_lpa": 111.489,
+      "predicted_lpa": 116.297
+    },
+    {
+      "actual_lpa": 108.678,
+      "predicted_lpa": 121.774
+    },
+    {
+      "actual_lpa": 104.077,
+      "predicted_lpa": 109.94
+    },
+    {
+      "actual_lpa": 146.895,
+      "predicted_lpa": 153.683
+    },
+    {
+      "actual_lpa": 111.039,
+      "predicted_lpa": 109.433
+    },
+    {
+      "actual_lpa": 76.621,
+      "predicted_lpa": 70.97
+    },
+    {
+      "actual_lpa": 213.512,
+      "predicted_lpa": 205.105
+    },
+    {
+      "actual_lpa": 83.213,
+      "predicted_lpa": 81.69
+    },
+    {
+      "actual_lpa": 81.183,
+      "predicted_lpa": 88.234
+    },
+    {
+      "actual_lpa": 87.371,
+      "predicted_lpa": 83.55
+    },
+    {
+      "actual_lpa": 125.729,
+      "predicted_lpa": 125.01
+    },
+    {
+      "actual_lpa": 105.342,
+      "predicted_lpa": 104.764
+    },
+    {
+      "actual_lpa": 132.9,
+      "predicted_lpa": 134.474
+    },
+    {
+      "actual_lpa": 102.039,
+      "predicted_lpa": 116.835
+    },
+    {
+      "actual_lpa": 142.342,
+      "predicted_lpa": 144.432
+    },
+    {
+      "actual_lpa": 92.929,
+      "predicted_lpa": 90.273
+    },
+    {
+      "actual_lpa": 154.081,
+      "predicted_lpa": 153.727
+    },
+    {
+      "actual_lpa": 149.241,
+      "predicted_lpa": 150.166
+    },
+    {
+      "actual_lpa": 108.014,
+      "predicted_lpa": 110.501
+    },
+    {
+      "actual_lpa": 118.115,
+      "predicted_lpa": 119.04
+    },
+    {
+      "actual_lpa": 75.079,
+      "predicted_lpa": 72.002
+    },
+    {
+      "actual_lpa": 96.671,
+      "predicted_lpa": 98.699
+    },
+    {
+      "actual_lpa": 131.974,
+      "predicted_lpa": 132.799
+    },
+    {
+      "actual_lpa": 104.164,
+      "predicted_lpa": 100.899
+    },
+    {
+      "actual_lpa": 190.981,
+      "predicted_lpa": 183.35
+    },
+    {
+      "actual_lpa": 170.24,
+      "predicted_lpa": 165.904
+    },
+    {
+      "actual_lpa": 134.399,
+      "predicted_lpa": 140.952
+    },
+    {
+      "actual_lpa": 79.041,
+      "predicted_lpa": 77.685
+    },
+    {
+      "actual_lpa": 127.029,
+      "predicted_lpa": 126.899
+    },
+    {
+      "actual_lpa": 147.657,
+      "predicted_lpa": 148.144
+    },
+    {
+      "actual_lpa": 158.052,
+      "predicted_lpa": 157.931
+    },
+    {
+      "actual_lpa": 105.023,
+      "predicted_lpa": 99.328
+    },
+    {
+      "actual_lpa": 166.447,
+      "predicted_lpa": 168.459
+    },
+    {
+      "actual_lpa": 136.841,
+      "predicted_lpa": 130.365
+    },
+    {
+      "actual_lpa": 93.782,
+      "predicted_lpa": 88.39
+    },
+    {
+      "actual_lpa": 175.435,
+      "predicted_lpa": 173.716
+    },
+    {
+      "actual_lpa": 117.902,
+      "predicted_lpa": 125.315
+    },
+    {
+      "actual_lpa": 65.536,
+      "predicted_lpa": 55.242
+    },
+    {
+      "actual_lpa": 93.749,
+      "predicted_lpa": 88.065
+    },
+    {
+      "actual_lpa": 85.129,
+      "predicted_lpa": 81.921
+    },
+    {
+      "actual_lpa": 135.679,
+      "predicted_lpa": 137.626
+    },
+    {
+      "actual_lpa": 171.669,
+      "predicted_lpa": 162.583
+    },
+    {
+      "actual_lpa": 125.884,
+      "predicted_lpa": 120.816
+    },
+    {
+      "actual_lpa": 173.568,
+      "predicted_lpa": 173.338
+    },
+    {
+      "actual_lpa": 151.49,
+      "predicted_lpa": 153.188
+    },
+    {
+      "actual_lpa": 86.986,
+      "predicted_lpa": 89.803
+    },
+    {
+      "actual_lpa": 127.205,
+      "predicted_lpa": 129.855
+    },
+    {
+      "actual_lpa": 215.88,
+      "predicted_lpa": 204.592
+    },
+    {
+      "actual_lpa": 161.91,
+      "predicted_lpa": 164.963
+    },
+    {
+      "actual_lpa": 127.682,
+      "predicted_lpa": 130.587
+    },
+    {
+      "actual_lpa": 128.606,
+      "predicted_lpa": 135.604
+    },
+    {
+      "actual_lpa": 120.016,
+      "predicted_lpa": 127.024
+    },
+    {
+      "actual_lpa": 118.346,
+      "predicted_lpa": 118.477
+    },
+    {
+      "actual_lpa": 156.797,
+      "predicted_lpa": 160.656
+    },
+    {
+      "actual_lpa": 108.126,
+      "predicted_lpa": 101.965
+    },
+    {
+      "actual_lpa": 196.515,
+      "predicted_lpa": 186.43
+    },
+    {
+      "actual_lpa": 91.769,
+      "predicted_lpa": 97.051
+    },
+    {
+      "actual_lpa": 104.463,
+      "predicted_lpa": 103.841
+    },
+    {
+      "actual_lpa": 127.412,
+      "predicted_lpa": 131.19
+    },
+    {
+      "actual_lpa": 77.269,
+      "predicted_lpa": 69.961
+    },
+    {
+      "actual_lpa": 177.222,
+      "predicted_lpa": 174.56
+    },
+    {
+      "actual_lpa": 126.324,
+      "predicted_lpa": 131.679
+    },
+    {
+      "actual_lpa": 202.997,
+      "predicted_lpa": 198.129
+    },
+    {
+      "actual_lpa": 103.398,
+      "predicted_lpa": 103.161
+    },
+    {
+      "actual_lpa": 108.794,
+      "predicted_lpa": 111.985
+    },
+    {
+      "actual_lpa": 126.269,
+      "predicted_lpa": 121.461
+    },
+    {
+      "actual_lpa": 111.616,
+      "predicted_lpa": 109.888
+    },
+    {
+      "actual_lpa": 207.919,
+      "predicted_lpa": 201.672
+    },
+    {
+      "actual_lpa": 181.919,
+      "predicted_lpa": 181.305
+    },
+    {
+      "actual_lpa": 130.948,
+      "predicted_lpa": 124.221
+    },
+    {
+      "actual_lpa": 134.882,
+      "predicted_lpa": 129.15
+    },
+    {
+      "actual_lpa": 101.888,
+      "predicted_lpa": 98.291
+    },
+    {
+      "actual_lpa": 129.34,
+      "predicted_lpa": 127.663
+    },
+    {
+      "actual_lpa": 102.879,
+      "predicted_lpa": 108.689
+    },
+    {
+      "actual_lpa": 74.54,
+      "predicted_lpa": 79.436
+    },
+    {
+      "actual_lpa": 100.835,
+      "predicted_lpa": 96.886
+    },
+    {
+      "actual_lpa": 123.766,
+      "predicted_lpa": 127.455
+    },
+    {
+      "actual_lpa": 102.058,
+      "predicted_lpa": 95.788
+    },
+    {
+      "actual_lpa": 135.017,
+      "predicted_lpa": 143.408
+    },
+    {
+      "actual_lpa": 151.728,
+      "predicted_lpa": 159.702
+    },
+    {
+      "actual_lpa": 185.473,
+      "predicted_lpa": 180.792
+    },
+    {
+      "actual_lpa": 156.822,
+      "predicted_lpa": 154.53
+    },
+    {
+      "actual_lpa": 163.208,
+      "predicted_lpa": 160.643
+    },
+    {
+      "actual_lpa": 80.162,
+      "predicted_lpa": 72.313
+    },
+    {
+      "actual_lpa": 182.626,
+      "predicted_lpa": 177.765
+    },
+    {
+      "actual_lpa": 133.486,
+      "predicted_lpa": 130.915
+    },
+    {
+      "actual_lpa": 80.806,
+      "predicted_lpa": 76.941
+    },
+    {
+      "actual_lpa": 104.609,
+      "predicted_lpa": 105.927
+    },
+    {
+      "actual_lpa": 213.506,
+      "predicted_lpa": 197.825
+    },
+    {
+      "actual_lpa": 146.612,
+      "predicted_lpa": 142.405
+    },
+    {
+      "actual_lpa": 93.796,
+      "predicted_lpa": 85.78
+    },
+    {
+      "actual_lpa": 126.29,
+      "predicted_lpa": 143.974
+    },
+    {
+      "actual_lpa": 134.868,
+      "predicted_lpa": 142.467
+    },
+    {
+      "actual_lpa": 101.286,
+      "predicted_lpa": 104.848
+    },
+    {
+      "actual_lpa": 129.77,
+      "predicted_lpa": 141.045
+    },
+    {
+      "actual_lpa": 116.229,
+      "predicted_lpa": 117.966
+    },
+    {
+      "actual_lpa": 186.501,
+      "predicted_lpa": 180.59
+    },
+    {
+      "actual_lpa": 135.03,
+      "predicted_lpa": 138.391
+    },
+    {
+      "actual_lpa": 103.035,
+      "predicted_lpa": 101.966
+    },
+    {
+      "actual_lpa": 131.603,
+      "predicted_lpa": 128.536
+    },
+    {
+      "actual_lpa": 148.795,
+      "predicted_lpa": 153.313
+    },
+    {
+      "actual_lpa": 111.488,
+      "predicted_lpa": 119.527
+    },
+    {
+      "actual_lpa": 83.644,
+      "predicted_lpa": 87.594
+    },
+    {
+      "actual_lpa": 74.437,
+      "predicted_lpa": 66.462
+    },
+    {
+      "actual_lpa": 141.876,
+      "predicted_lpa": 146.454
+    },
+    {
+      "actual_lpa": 144.93,
+      "predicted_lpa": 148.054
+    },
+    {
+      "actual_lpa": 138.054,
+      "predicted_lpa": 137.39
+    },
+    {
+      "actual_lpa": 94.446,
+      "predicted_lpa": 86.043
+    },
+    {
+      "actual_lpa": 122.71,
+      "predicted_lpa": 124.302
+    },
+    {
+      "actual_lpa": 137.438,
+      "predicted_lpa": 138.014
+    },
+    {
+      "actual_lpa": 135.227,
+      "predicted_lpa": 132.76
+    },
+    {
+      "actual_lpa": 140.935,
+      "predicted_lpa": 139.981
+    },
+    {
+      "actual_lpa": 135.772,
+      "predicted_lpa": 136.761
+    },
+    {
+      "actual_lpa": 84.745,
+      "predicted_lpa": 78.998
+    },
+    {
+      "actual_lpa": 119.445,
+      "predicted_lpa": 120.534
+    },
+    {
+      "actual_lpa": 64.926,
+      "predicted_lpa": 68.989
+    },
+    {
+      "actual_lpa": 71.52,
+      "predicted_lpa": 69.684
+    },
+    {
+      "actual_lpa": 137.968,
+      "predicted_lpa": 134.66
+    },
+    {
+      "actual_lpa": 66.32,
+      "predicted_lpa": 68.929
+    },
+    {
+      "actual_lpa": 114.18,
+      "predicted_lpa": 118.164
+    },
+    {
+      "actual_lpa": 71.766,
+      "predicted_lpa": 64.246
+    },
+    {
+      "actual_lpa": 112.418,
+      "predicted_lpa": 115.777
+    },
+    {
+      "actual_lpa": 66.647,
+      "predicted_lpa": 59.233
+    },
+    {
+      "actual_lpa": 83.796,
+      "predicted_lpa": 73.488
+    },
+    {
+      "actual_lpa": 132.648,
+      "predicted_lpa": 129.299
+    },
+    {
+      "actual_lpa": 131.253,
+      "predicted_lpa": 133.358
+    },
+    {
+      "actual_lpa": 83.514,
+      "predicted_lpa": 83.01
+    },
+    {
+      "actual_lpa": 58.943,
+      "predicted_lpa": 53.075
+    },
+    {
+      "actual_lpa": 78.004,
+      "predicted_lpa": 77.873
+    },
+    {
+      "actual_lpa": 121.337,
+      "predicted_lpa": 130.512
+    },
+    {
+      "actual_lpa": 141.622,
+      "predicted_lpa": 141.572
+    },
+    {
+      "actual_lpa": 155.753,
+      "predicted_lpa": 151.957
+    },
+    {
+      "actual_lpa": 127.886,
+      "predicted_lpa": 134.465
+    },
+    {
+      "actual_lpa": 108.513,
+      "predicted_lpa": 119.348
+    },
+    {
+      "actual_lpa": 108.531,
+      "predicted_lpa": 111.437
+    },
+    {
+      "actual_lpa": 90.653,
+      "predicted_lpa": 102.413
+    },
+    {
+      "actual_lpa": 125.332,
+      "predicted_lpa": 122.76
+    },
+    {
+      "actual_lpa": 164.358,
+      "predicted_lpa": 162.856
+    },
+    {
+      "actual_lpa": 141.564,
+      "predicted_lpa": 144.407
+    },
+    {
+      "actual_lpa": 82.406,
+      "predicted_lpa": 85.06
+    },
+    {
+      "actual_lpa": 111.711,
+      "predicted_lpa": 113.619
+    },
+    {
+      "actual_lpa": 114.892,
+      "predicted_lpa": 120.548
+    },
+    {
+      "actual_lpa": 123.285,
+      "predicted_lpa": 121.121
+    },
+    {
+      "actual_lpa": 148.203,
+      "predicted_lpa": 144.503
+    },
+    {
+      "actual_lpa": 178.712,
+      "predicted_lpa": 173.567
+    },
+    {
+      "actual_lpa": 149.541,
+      "predicted_lpa": 156.414
+    },
+    {
+      "actual_lpa": 113.713,
+      "predicted_lpa": 120.388
+    },
+    {
+      "actual_lpa": 136.746,
+      "predicted_lpa": 145.772
+    },
+    {
+      "actual_lpa": 132.831,
+      "predicted_lpa": 131.102
+    },
+    {
+      "actual_lpa": 124.443,
+      "predicted_lpa": 124.393
+    },
+    {
+      "actual_lpa": 105.753,
+      "predicted_lpa": 107.409
+    },
+    {
+      "actual_lpa": 114.861,
+      "predicted_lpa": 119.782
+    },
+    {
+      "actual_lpa": 176.774,
+      "predicted_lpa": 170.228
+    },
+    {
+      "actual_lpa": 161.452,
+      "predicted_lpa": 161.347
+    },
+    {
+      "actual_lpa": 145.892,
+      "predicted_lpa": 140.397
+    },
+    {
+      "actual_lpa": 148.673,
+      "predicted_lpa": 145.012
+    },
+    {
+      "actual_lpa": 118.014,
+      "predicted_lpa": 119.078
+    },
+    {
+      "actual_lpa": 123.236,
+      "predicted_lpa": 123.58
+    },
+    {
+      "actual_lpa": 105.442,
+      "predicted_lpa": 100.003
+    },
+    {
+      "actual_lpa": 81.239,
+      "predicted_lpa": 90.265
+    },
+    {
+      "actual_lpa": 123.375,
+      "predicted_lpa": 123.508
+    },
+    {
+      "actual_lpa": 152.521,
+      "predicted_lpa": 159.982
+    },
+    {
+      "actual_lpa": 144.603,
+      "predicted_lpa": 146.552
+    },
+    {
+      "actual_lpa": 121.792,
+      "predicted_lpa": 115.77
+    },
+    {
+      "actual_lpa": 112.276,
+      "predicted_lpa": 118.729
+    },
+    {
+      "actual_lpa": 84.196,
+      "predicted_lpa": 80.774
+    },
+    {
+      "actual_lpa": 149.986,
+      "predicted_lpa": 143.485
+    },
+    {
+      "actual_lpa": 142.108,
+      "predicted_lpa": 147.802
+    },
+    {
+      "actual_lpa": 98.818,
+      "predicted_lpa": 97.687
+    },
+    {
+      "actual_lpa": 109.653,
+      "predicted_lpa": 113.288
+    },
+    {
+      "actual_lpa": 159.458,
+      "predicted_lpa": 157.992
+    },
+    {
+      "actual_lpa": 127.075,
+      "predicted_lpa": 131.428
+    },
+    {
+      "actual_lpa": 101.022,
+      "predicted_lpa": 105.767
+    },
+    {
+      "actual_lpa": 125.001,
+      "predicted_lpa": 134.156
+    },
+    {
+      "actual_lpa": 71.856,
+      "predicted_lpa": 70.436
+    },
+    {
+      "actual_lpa": 127.986,
+      "predicted_lpa": 128.429
+    },
+    {
+      "actual_lpa": 58.797,
+      "predicted_lpa": 45.715
+    },
+    {
+      "actual_lpa": 68.603,
+      "predicted_lpa": 65.95
+    },
+    {
+      "actual_lpa": 104.78,
+      "predicted_lpa": 105.606
+    },
+    {
+      "actual_lpa": 128.12,
+      "predicted_lpa": 128.325
+    },
+    {
+      "actual_lpa": 196.129,
+      "predicted_lpa": 179.349
+    },
+    {
+      "actual_lpa": 161.251,
+      "predicted_lpa": 153.178
+    },
+    {
+      "actual_lpa": 123.461,
+      "predicted_lpa": 123.975
+    },
+    {
+      "actual_lpa": 119.985,
+      "predicted_lpa": 119.967
+    },
+    {
+      "actual_lpa": 177.001,
+      "predicted_lpa": 169.907
+    },
+    {
+      "actual_lpa": 67.149,
+      "predicted_lpa": 65.945
+    },
+    {
+      "actual_lpa": 115.077,
+      "predicted_lpa": 129.375
+    },
+    {
+      "actual_lpa": 78.719,
+      "predicted_lpa": 87.564
+    },
+    {
+      "actual_lpa": 66.617,
+      "predicted_lpa": 55.735
+    },
+    {
+      "actual_lpa": 101.37,
+      "predicted_lpa": 104.14
+    },
+    {
+      "actual_lpa": 134.089,
+      "predicted_lpa": 143.108
+    },
+    {
+      "actual_lpa": 103.967,
+      "predicted_lpa": 113.774
+    },
+    {
+      "actual_lpa": 153.474,
+      "predicted_lpa": 152.906
+    },
+    {
+      "actual_lpa": 78.037,
+      "predicted_lpa": 76.59
+    },
+    {
+      "actual_lpa": 139.607,
+      "predicted_lpa": 137.485
+    },
+    {
+      "actual_lpa": 128.593,
+      "predicted_lpa": 129.698
+    },
+    {
+      "actual_lpa": 89.663,
+      "predicted_lpa": 91.815
+    },
+    {
+      "actual_lpa": 123.385,
+      "predicted_lpa": 125.906
+    },
+    {
+      "actual_lpa": 128.622,
+      "predicted_lpa": 122.46
+    },
+    {
+      "actual_lpa": 133.605,
+      "predicted_lpa": 153.753
+    },
+    {
+      "actual_lpa": 106.628,
+      "predicted_lpa": 113.538
+    },
+    {
+      "actual_lpa": 211.97,
+      "predicted_lpa": 191.836
+    },
+    {
+      "actual_lpa": 119.69,
+      "predicted_lpa": 122.531
+    },
+    {
+      "actual_lpa": 113.189,
+      "predicted_lpa": 110.754
+    },
+    {
+      "actual_lpa": 156.845,
+      "predicted_lpa": 158.202
+    },
+    {
+      "actual_lpa": 117.463,
+      "predicted_lpa": 113.99
+    },
+    {
+      "actual_lpa": 136.626,
+      "predicted_lpa": 135.023
+    },
+    {
+      "actual_lpa": 121.935,
+      "predicted_lpa": 124.198
+    },
+    {
+      "actual_lpa": 108.122,
+      "predicted_lpa": 109.164
+    },
+    {
+      "actual_lpa": 158.924,
+      "predicted_lpa": 161.673
+    },
+    {
+      "actual_lpa": 119.416,
+      "predicted_lpa": 112.34
+    },
+    {
+      "actual_lpa": 110.095,
+      "predicted_lpa": 107.858
+    },
+    {
+      "actual_lpa": 155.606,
+      "predicted_lpa": 158.806
+    },
+    {
+      "actual_lpa": 99.043,
+      "predicted_lpa": 96.027
+    },
+    {
+      "actual_lpa": 97.186,
+      "predicted_lpa": 102.32
+    },
+    {
+      "actual_lpa": 120.288,
+      "predicted_lpa": 148.079
+    },
+    {
+      "actual_lpa": 115.757,
+      "predicted_lpa": 115.706
+    },
+    {
+      "actual_lpa": 152.175,
+      "predicted_lpa": 152.297
+    },
+    {
+      "actual_lpa": 147.108,
+      "predicted_lpa": 150.766
+    },
+    {
+      "actual_lpa": 138.673,
+      "predicted_lpa": 140.94
+    },
+    {
+      "actual_lpa": 115.083,
+      "predicted_lpa": 123.31
+    },
+    {
+      "actual_lpa": 158.875,
+      "predicted_lpa": 156.503
+    },
+    {
+      "actual_lpa": 110.156,
+      "predicted_lpa": 113.786
+    },
+    {
+      "actual_lpa": 141.549,
+      "predicted_lpa": 143.227
+    },
+    {
+      "actual_lpa": 154.142,
+      "predicted_lpa": 145.543
+    },
+    {
+      "actual_lpa": 73.747,
+      "predicted_lpa": 65.266
+    },
+    {
+      "actual_lpa": 101.175,
+      "predicted_lpa": 111.763
+    },
+    {
+      "actual_lpa": 105.243,
+      "predicted_lpa": 95.484
+    },
+    {
+      "actual_lpa": 116.396,
+      "predicted_lpa": 117.775
+    },
+    {
+      "actual_lpa": 143.88,
+      "predicted_lpa": 139.838
+    },
+    {
+      "actual_lpa": 149.135,
+      "predicted_lpa": 151.079
+    },
+    {
+      "actual_lpa": 94.197,
+      "predicted_lpa": 101.526
+    },
+    {
+      "actual_lpa": 119.123,
+      "predicted_lpa": 119.738
+    },
+    {
+      "actual_lpa": 140.569,
+      "predicted_lpa": 141.89
+    },
+    {
+      "actual_lpa": 162.134,
+      "predicted_lpa": 155.782
+    },
+    {
+      "actual_lpa": 96.806,
+      "predicted_lpa": 97.85
+    },
+    {
+      "actual_lpa": 119.601,
+      "predicted_lpa": 118.031
+    },
+    {
+      "actual_lpa": 131.761,
+      "predicted_lpa": 136.593
+    },
+    {
+      "actual_lpa": 106.943,
+      "predicted_lpa": 114.719
+    },
+    {
+      "actual_lpa": 160.364,
+      "predicted_lpa": 155.922
+    },
+    {
+      "actual_lpa": 100.338,
+      "predicted_lpa": 101.819
+    },
+    {
+      "actual_lpa": 134.953,
+      "predicted_lpa": 139.853
+    },
+    {
+      "actual_lpa": 87.53,
+      "predicted_lpa": 84.9
+    },
+    {
+      "actual_lpa": 96.16,
+      "predicted_lpa": 108.01
+    },
+    {
+      "actual_lpa": 113.38,
+      "predicted_lpa": 114.706
+    },
+    {
+      "actual_lpa": 140.257,
+      "predicted_lpa": 142.935
+    },
+    {
+      "actual_lpa": 99.244,
+      "predicted_lpa": 96.768
+    },
+    {
+      "actual_lpa": 160.311,
+      "predicted_lpa": 151.415
+    },
+    {
+      "actual_lpa": 168.813,
+      "predicted_lpa": 162.791
+    },
+    {
+      "actual_lpa": 80.821,
+      "predicted_lpa": 63.671
+    },
+    {
+      "actual_lpa": 107.195,
+      "predicted_lpa": 113.579
+    },
+    {
+      "actual_lpa": 129.322,
+      "predicted_lpa": 129.769
+    },
+    {
+      "actual_lpa": 147.803,
+      "predicted_lpa": 148.892
+    },
+    {
+      "actual_lpa": 151.754,
+      "predicted_lpa": 151.285
+    },
+    {
+      "actual_lpa": 127.12,
+      "predicted_lpa": 131.384
+    },
+    {
+      "actual_lpa": 160.788,
+      "predicted_lpa": 156.8
+    },
+    {
+      "actual_lpa": 120.933,
+      "predicted_lpa": 127.956
+    },
+    {
+      "actual_lpa": 143.879,
+      "predicted_lpa": 136.499
+    },
+    {
+      "actual_lpa": 162.787,
+      "predicted_lpa": 163.675
+    },
+    {
+      "actual_lpa": 133.931,
+      "predicted_lpa": 138.289
+    },
+    {
+      "actual_lpa": 164.306,
+      "predicted_lpa": 167.462
+    },
+    {
+      "actual_lpa": 101.931,
+      "predicted_lpa": 104.118
+    },
+    {
+      "actual_lpa": 100.914,
+      "predicted_lpa": 99.762
+    },
+    {
+      "actual_lpa": 95.806,
+      "predicted_lpa": 99.649
+    },
+    {
+      "actual_lpa": 150.888,
+      "predicted_lpa": 147.453
+    },
+    {
+      "actual_lpa": 146.877,
+      "predicted_lpa": 155.748
+    },
+    {
+      "actual_lpa": 124.517,
+      "predicted_lpa": 124.537
+    },
+    {
+      "actual_lpa": 122.068,
+      "predicted_lpa": 122.109
+    },
+    {
+      "actual_lpa": 116.717,
+      "predicted_lpa": 110.116
+    },
+    {
+      "actual_lpa": 101.147,
+      "predicted_lpa": 106.116
+    },
+    {
+      "actual_lpa": 138.718,
+      "predicted_lpa": 140.809
+    },
+    {
+      "actual_lpa": 114.874,
+      "predicted_lpa": 116.582
+    },
+    {
+      "actual_lpa": 68.973,
+      "predicted_lpa": 49.189
+    },
+    {
+      "actual_lpa": 98.888,
+      "predicted_lpa": 103.423
+    },
+    {
+      "actual_lpa": 190.387,
+      "predicted_lpa": 178.905
+    },
+    {
+      "actual_lpa": 177.238,
+      "predicted_lpa": 170.648
+    },
+    {
+      "actual_lpa": 88.715,
+      "predicted_lpa": 86.776
+    },
+    {
+      "actual_lpa": 150.128,
+      "predicted_lpa": 156.611
+    },
+    {
+      "actual_lpa": 119.332,
+      "predicted_lpa": 124.517
+    },
+    {
+      "actual_lpa": 133.81,
+      "predicted_lpa": 125.952
+    },
+    {
+      "actual_lpa": 94.359,
+      "predicted_lpa": 101.425
+    },
+    {
+      "actual_lpa": 119.74,
+      "predicted_lpa": 125.086
+    },
+    {
+      "actual_lpa": 115.347,
+      "predicted_lpa": 115.762
+    },
+    {
+      "actual_lpa": 128.21,
+      "predicted_lpa": 137.656
+    },
+    {
+      "actual_lpa": 115.514,
+      "predicted_lpa": 123.0
+    },
+    {
+      "actual_lpa": 112.82,
+      "predicted_lpa": 110.96
+    },
+    {
+      "actual_lpa": 144.381,
+      "predicted_lpa": 148.248
+    },
+    {
+      "actual_lpa": 133.512,
+      "predicted_lpa": 141.02
+    },
+    {
+      "actual_lpa": 106.894,
+      "predicted_lpa": 123.065
+    },
+    {
+      "actual_lpa": 147.676,
+      "predicted_lpa": 153.922
+    },
+    {
+      "actual_lpa": 111.685,
+      "predicted_lpa": 112.273
+    },
+    {
+      "actual_lpa": 95.707,
+      "predicted_lpa": 104.231
+    },
+    {
+      "actual_lpa": 99.784,
+      "predicted_lpa": 99.216
+    },
+    {
+      "actual_lpa": 154.51,
+      "predicted_lpa": 157.224
+    },
+    {
+      "actual_lpa": 80.284,
+      "predicted_lpa": 80.634
+    },
+    {
+      "actual_lpa": 168.359,
+      "predicted_lpa": 164.318
+    },
+    {
+      "actual_lpa": 94.348,
+      "predicted_lpa": 94.474
+    },
+    {
+      "actual_lpa": 117.901,
+      "predicted_lpa": 117.744
+    },
+    {
+      "actual_lpa": 168.964,
+      "predicted_lpa": 156.773
+    },
+    {
+      "actual_lpa": 163.016,
+      "predicted_lpa": 151.605
+    },
+    {
+      "actual_lpa": 102.266,
+      "predicted_lpa": 104.457
+    },
+    {
+      "actual_lpa": 140.644,
+      "predicted_lpa": 148.073
+    },
+    {
+      "actual_lpa": 72.596,
+      "predicted_lpa": 64.463
+    },
+    {
+      "actual_lpa": 68.11,
+      "predicted_lpa": 59.624
+    },
+    {
+      "actual_lpa": 90.802,
+      "predicted_lpa": 90.566
+    },
+    {
+      "actual_lpa": 140.226,
+      "predicted_lpa": 140.858
+    },
+    {
+      "actual_lpa": 128.074,
+      "predicted_lpa": 129.583
+    },
+    {
+      "actual_lpa": 107.741,
+      "predicted_lpa": 120.409
+    },
+    {
+      "actual_lpa": 106.095,
+      "predicted_lpa": 109.533
+    },
+    {
+      "actual_lpa": 135.856,
+      "predicted_lpa": 134.942
+    },
+    {
+      "actual_lpa": 126.667,
+      "predicted_lpa": 129.476
+    },
+    {
+      "actual_lpa": 171.905,
+      "predicted_lpa": 174.524
+    },
+    {
+      "actual_lpa": 114.974,
+      "predicted_lpa": 119.671
+    },
+    {
+      "actual_lpa": 130.963,
+      "predicted_lpa": 138.012
+    },
+    {
+      "actual_lpa": 173.272,
+      "predicted_lpa": 170.19
+    },
+    {
+      "actual_lpa": 77.421,
+      "predicted_lpa": 79.83
+    },
+    {
+      "actual_lpa": 65.623,
+      "predicted_lpa": 62.088
+    },
+    {
+      "actual_lpa": 141.662,
+      "predicted_lpa": 131.24
+    },
+    {
+      "actual_lpa": 132.866,
+      "predicted_lpa": 139.374
+    },
+    {
+      "actual_lpa": 123.423,
+      "predicted_lpa": 115.898
+    },
+    {
+      "actual_lpa": 130.641,
+      "predicted_lpa": 135.622
+    },
+    {
+      "actual_lpa": 84.978,
+      "predicted_lpa": 77.075
+    },
+    {
+      "actual_lpa": 111.721,
+      "predicted_lpa": 117.544
+    },
+    {
+      "actual_lpa": 114.724,
+      "predicted_lpa": 109.188
+    },
+    {
+      "actual_lpa": 125.229,
+      "predicted_lpa": 127.45
+    },
+    {
+      "actual_lpa": 166.825,
+      "predicted_lpa": 166.101
+    },
+    {
+      "actual_lpa": 87.727,
+      "predicted_lpa": 85.384
+    },
+    {
+      "actual_lpa": 129.942,
+      "predicted_lpa": 130.99
+    },
+    {
+      "actual_lpa": 92.587,
+      "predicted_lpa": 91.086
+    },
+    {
+      "actual_lpa": 121.404,
+      "predicted_lpa": 119.219
+    },
+    {
+      "actual_lpa": 127.152,
+      "predicted_lpa": 124.306
+    },
+    {
+      "actual_lpa": 117.734,
+      "predicted_lpa": 115.597
+    },
+    {
+      "actual_lpa": 120.242,
+      "predicted_lpa": 122.51
+    },
+    {
+      "actual_lpa": 116.254,
+      "predicted_lpa": 116.266
+    },
+    {
+      "actual_lpa": 115.165,
+      "predicted_lpa": 125.062
+    },
+    {
+      "actual_lpa": 91.18,
+      "predicted_lpa": 87.596
+    },
+    {
+      "actual_lpa": 134.631,
+      "predicted_lpa": 135.309
+    },
+    {
+      "actual_lpa": 106.373,
+      "predicted_lpa": 101.911
+    },
+    {
+      "actual_lpa": 123.327,
+      "predicted_lpa": 119.115
+    },
+    {
+      "actual_lpa": 122.136,
+      "predicted_lpa": 130.348
+    },
+    {
+      "actual_lpa": 71.628,
+      "predicted_lpa": 75.894
+    },
+    {
+      "actual_lpa": 130.2,
+      "predicted_lpa": 134.799
+    },
+    {
+      "actual_lpa": 72.682,
+      "predicted_lpa": 64.584
+    },
+    {
+      "actual_lpa": 120.349,
+      "predicted_lpa": 124.219
+    },
+    {
+      "actual_lpa": 179.084,
+      "predicted_lpa": 170.062
+    },
+    {
+      "actual_lpa": 140.389,
+      "predicted_lpa": 145.472
+    },
+    {
+      "actual_lpa": 155.236,
+      "predicted_lpa": 159.105
+    },
+    {
+      "actual_lpa": 100.007,
+      "predicted_lpa": 99.494
+    },
+    {
+      "actual_lpa": 126.741,
+      "predicted_lpa": 131.461
+    },
+    {
+      "actual_lpa": 137.878,
+      "predicted_lpa": 135.977
+    },
+    {
+      "actual_lpa": 124.606,
+      "predicted_lpa": 127.393
+    },
+    {
+      "actual_lpa": 128.55,
+      "predicted_lpa": 130.459
+    },
+    {
+      "actual_lpa": 120.788,
+      "predicted_lpa": 119.108
+    },
+    {
+      "actual_lpa": 122.902,
+      "predicted_lpa": 123.026
+    },
+    {
+      "actual_lpa": 93.001,
+      "predicted_lpa": 92.968
+    },
+    {
+      "actual_lpa": 88.692,
+      "predicted_lpa": 96.702
+    },
+    {
+      "actual_lpa": 123.079,
+      "predicted_lpa": 127.301
+    },
+    {
+      "actual_lpa": 107.314,
+      "predicted_lpa": 112.66
+    },
+    {
+      "actual_lpa": 114.475,
+      "predicted_lpa": 110.137
+    },
+    {
+      "actual_lpa": 175.675,
+      "predicted_lpa": 171.404
+    },
+    {
+      "actual_lpa": 101.832,
+      "predicted_lpa": 102.372
+    },
+    {
+      "actual_lpa": 93.688,
+      "predicted_lpa": 93.906
+    },
+    {
+      "actual_lpa": 120.11,
+      "predicted_lpa": 125.048
+    },
+    {
+      "actual_lpa": 119.303,
+      "predicted_lpa": 121.103
+    },
+    {
+      "actual_lpa": 140.631,
+      "predicted_lpa": 141.88
+    },
+    {
+      "actual_lpa": 125.095,
+      "predicted_lpa": 120.434
+    },
+    {
+      "actual_lpa": 137.275,
+      "predicted_lpa": 139.235
+    },
+    {
+      "actual_lpa": 124.067,
+      "predicted_lpa": 124.494
+    },
+    {
+      "actual_lpa": 99.603,
+      "predicted_lpa": 105.482
+    },
+    {
+      "actual_lpa": 91.863,
+      "predicted_lpa": 89.482
+    }
+  ]
+}
